@@ -28,11 +28,13 @@ function playRound(humanChoice, computerChoice) {
             finalScore.textContent = `Congratulations! You won! Final score: ${humanScore} - ${computerScore}`
         }
         else {
-            finalScore.textContent = `You lost! Better luck next time! Final score: ${computerScore} - ${humanScore}`
+            finalScore.textContent = `You lost! Better luck next time! Final score: ${humanScore} - ${computerScore}`
         }
         
         humanScore = 0;
         computerScore = 0;
+    } else {
+        finalScore.textContent = '';
     }
 
     updateScore();
